@@ -1,16 +1,16 @@
 package models
 
 type FindingMatch struct {
-	PlayerId string
+	PlayerId string `json:"playerId"`
 }
 
 type MatchMade struct {
-	Player1Id string
-	Player2Id string
+	Player1Id string `json:"player1Id"`
+	Player2Id string `json:"player2Id"`
 }
 
 type LeftMatchmaking struct {
-	PlayerId string
+	PlayerId string `json:"playerId"`
 }
 
 type FindMatchOutput interface {
